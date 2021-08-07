@@ -67,9 +67,9 @@ $colors: (
 // scss-docs-end colors-map
 
 // scss-docs-start theme-color-variables
-$primary:       #00cc99; // $blue !default;
-$secondary:     $gray-600 !default;
-$success:       $green !default;
+$primary:       #630834; // $blue !default;
+$secondary:     #707070 !default;
+$success:       #E31277 !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
@@ -250,11 +250,17 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 $spacer: 1rem !default;
 $spacers: (
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  1: $spacer * .25,  // 4 
+  2: $spacer * .5,   // 8
+  3: $spacer * .75,  // 12
+  4: $spacer,        // 16
+  5: $spacer * 1.25, // 20
+  6: $spacer * 1.5,  // 24
+  7: $spacer * 1.75, // 28
+  8: $spacer * 2,    // 32
+  9: $spacer * 2.5,  // 40
+  10: $spacer * 2.75,// 44
+  11: $spacer * 3,   // 48
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -267,7 +273,10 @@ $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) 
 // scss-docs-start position-map
 $position-values: (
   0: 0,
+  15: 15%,
+  25: 25%,
   50: 50%,
+  75: 75%,
   100: 100%
 ) !default;
 // scss-docs-end position-map
@@ -286,7 +295,7 @@ $body-text-align:           null !default;
 // Style anchor elements.
 
 $link-color:                              $primary !default;
-$link-decoration:                         underline !default;
+$link-decoration:                         none !default;
 $link-shade-percentage:                   20% !default;
 $link-hover-color:                        shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration:                   null !default;
@@ -416,7 +425,7 @@ $aspect-ratios: (
 
 // scss-docs-start font-variables
 // stylelint-disable value-keyword-case
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:      Roboto, "Noto Sans", sans-serif !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
 $font-family-base:            var(--#{$variable-prefix}font-sans-serif) !default;
@@ -1466,3 +1475,23 @@ $kbd-color:                         $white !default;
 $kbd-bg:                            $gray-900 !default;
 
 $pre-color:                         null !default;
+
+$utilities: (
+  // 40 36 32 28 24 20 16 14 12
+  "font-size": (
+    property: font-size,
+    class: fz,
+    responsive: true,
+    values: (
+      "smaller": .75rem,
+      "small": .875rem,
+      "medium": 1rem,
+      "large": 1.25rem,
+      "larger": 1.5rem,
+      "x-large": 1.75rem,
+      "xx-large": 2rem,
+      "huge": 2.25rem,
+      "huger": 2.5rem,
+    )
+  )
+);

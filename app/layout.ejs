@@ -7,55 +7,60 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%- title %></title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/all.css">
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light py-4 py-md-7">
+      <div class="container d-flex justify-content-end align-items-center position-relative">
+        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> -->
+        <h1 class="d-flex align-items-center position-absolute top-50 start-50 translate-middle ">
+          <a class="navbar-brand text-primary fz-large fz-md-larger p-0" href="#">EXHIBINECTION</a>
+        </h1>
+        <!-- 登入 / 註冊 -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item me-md-8">
+              <a class="nav-link py-0 link-secondary" href="#">Sign in</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <li class="nav-item me-md-8">
+              <a class="nav-link py-0 link-secondary" href="#">Sign up</a>
             </li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
         </div>
+        <!-- 購物車 -->
+        <button type="button" class="btn btn-link d-flex position-relative">
+          <span class="material-icons">confirmation_number</span>
+          <span class="position-absolute top-15 start-75 translate-middle badge rounded-pill bg-success">3</span>
+        </button>
       </div>
     </nav>
-
-    <%- contents %>
-
-    <footer class="footer">
-      footer
+    <main class="main">
+      <%- contents %>
+    </main>
+    <footer class="py-4 py-md-7">
+      <div class="container">
+        <ul class="list-unstyled d-flex align-items-center">
+          <li class="me-auto">
+            <p class="d-flex align-items-center flex-wrap">
+              <span class="fz-larger me-4">EXHIBINECTION</span>
+              © 2020. All Rights Reserved.
+            </p>
+          </li>
+          <li class="me-6 d-none d-md-block">
+            <a href="#" class="link-secondary">Sign in</a>
+          </li>
+          <li class="d-none d-md-block">
+            <a href="#" class="link-secondary">Sign up</a>
+          </li>
+        </ul>
+      </div>
     </footer>
-
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
-
 </html>

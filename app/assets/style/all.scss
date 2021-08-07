@@ -2,5 +2,9 @@
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 
+// project
+@import './helpers/base.scss';
+@import './helpers/project.scss';
+@import './layout/index.scss';
 
-@import './layout/index.scss'
+
