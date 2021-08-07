@@ -1,6 +1,50 @@
 .main {
-  height: calc(100vh - 68px);
+  min-height: calc(100vh - 68px);
   @include media-breakpoint-up(md) {
-    height: calc(100vh - 92px);
+    min-height: calc(100vh - 92px);
+  }
+}
+
+.banner {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__index {
+    height: 480px;
+    background-image: url("https://images.unsplash.com/photo-1506846540181-347008948fff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=893&q=80");
+
+  }
+  &__review {
+    height: 480px;
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/people2.png?raw=true");
+  }
+  &__subscription {
+    height: 400px;
+    background-image: url("https://images.unsplash.com/photo-1536768767433-cc552f38def9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  }
+}
+
+.img { 
+  object-fit: cover;
+  &__product {
+    height: 345px;
+    @include media-breakpoint-up(md) {
+      height: auto;
+    }
+    @include media-breakpoint-up(lg) {
+      height: 350px;
+    }
+  }
+}
+.swiper {
+  cursor: pointer; 
+  overflow-x: scroll;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  &::-webkit-scrollbar {
+    display: none;
   }
 }

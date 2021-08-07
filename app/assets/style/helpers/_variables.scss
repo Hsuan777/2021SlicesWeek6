@@ -70,11 +70,12 @@ $colors: (
 $primary:       #630834; // $blue !default;
 $secondary:     #707070 !default;
 $success:       #E31277 !default;
-$info:          $cyan !default;
+$info:          #EFEFEF !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
+$white:         #fff;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -86,7 +87,8 @@ $theme-colors: (
   "warning":    $warning,
   "danger":     $danger,
   "light":      $light,
-  "dark":       $dark
+  "dark":       $dark,
+  "white":      $white,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -258,9 +260,11 @@ $spacers: (
   6: $spacer * 1.5,  // 24
   7: $spacer * 1.75, // 28
   8: $spacer * 2,    // 32
-  9: $spacer * 2.5,  // 40
-  10: $spacer * 2.75,// 44
-  11: $spacer * 3,   // 48
+  9: $spacer * 2.25, // 36
+  10: $spacer * 2.5, // 40
+  11: $spacer * 2.75,// 44
+  12: $spacer * 3,   // 48
+  13: $spacer * 3.75,   // 60
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -1492,6 +1496,29 @@ $utilities: (
       "xx-large": 2rem,
       "huge": 2.25rem,
       "huger": 2.5rem,
+    )
+  ),
+  "font-weight": (
+    property: font-weight,
+    class: fw,
+    values: (
+      light: $font-weight-light,
+      lighter: $font-weight-lighter,
+      normal: $font-weight-normal,
+      medium: 500,
+      bold: $font-weight-bold,
+      bolder: $font-weight-bolder
+    )
+  ),
+  "opacity": (
+    property: opacity,
+    values: (
+      0: 0,
+      25: .25,
+      50: .5,
+      75: .75,
+      90: .90,
+      100: 1,
     )
   )
 );
