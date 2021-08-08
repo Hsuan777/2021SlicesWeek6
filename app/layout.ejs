@@ -33,7 +33,7 @@
           </ul>
         </div>
         <!-- 購物車 -->
-        <button type="button" class="btn btn-link d-flex position-relative">
+        <button type="button" class="btn btn-link d-flex position-relative" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" >
           <span class="material-icons">confirmation_number</span>
           <span class="position-absolute top-15 start-75 translate-middle badge rounded-pill bg-success">3</span>
         </button>
@@ -60,6 +60,44 @@
         </ul>
       </div>
     </footer>
+
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-end bg-dark pt-5 pt-md-8 pb-7 pb-md-6 px-4 px-lg-8" tabindex="-1" id="offcanvasRight" data-bs-scroll="false" data-bs-backdrop="false" aria-labelledby="offcanvasRightLabel">
+      <h2 class="text-white mb-3">Cart List</h2>
+      <ul class="list-unstyled">
+        <li class="bg-white rounded">
+          <input type="button" value="" class="btn-close pt-1 px-1">
+          <div class="d-flex px-4 px-md-8 pb-4 pb-mb-6">
+            <img src="https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="2020 台味設計展" class="img img__cart me-4">
+            <ul class="list-unstyled">
+              <li class="fw-bold mb-1">
+                <h3 class="fz-medium text-nowrap">2020 台味設計展</h3>
+              </li>
+              <li class="fw-medium text-nowrap mb-1">
+                <p>01 JUN — 31 OCT</p>
+              </li>
+              <li class="text-secondary mb-4">
+                <p>全票</p>
+              </li>
+              <li class="fw-bold fz-large">
+                <p>NT$350</p>
+              </li>
+            </ul>
+            <ul class="list-unstyled d-flex flex-column flex-lg-row align-items-center ms-auto">
+              <li>
+                <input type="button" value="-" class="btn btn-link">
+              </li>
+              <li class="px-4">
+                <p class="fz-large fw-bold">01</p>
+              </li>
+              <li>
+                <input type="button" value="+" class="btn btn-link">
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
