@@ -226,7 +226,7 @@ $enable-grid-classes:         true !default;
 $enable-button-pointers:      true !default;
 $enable-rfs:                  true !default;
 $enable-validation-icons:     true !default;
-$enable-negative-margins:     false !default;
+$enable-negative-margins:     true !default;
 $enable-deprecation-messages: true !default;
 $enable-important-utilities:  true !default;
 
@@ -1501,6 +1501,7 @@ $utilities: (
   "font-weight": (
     property: font-weight,
     class: fw,
+    responsive: true,
     values: (
       light: $font-weight-light,
       lighter: $font-weight-lighter,
@@ -1520,5 +1521,18 @@ $utilities: (
       90: .90,
       100: 1,
     )
-  )
+  ),
+  "background-color": (
+    property: background-color,
+    class: bg,
+    responsive: true,
+    values: map-merge(
+      $theme-colors,
+      (
+        "body": $body-bg,
+        "white": $white,
+        "transparent": transparent
+      )
+    )
+  ),
 );
