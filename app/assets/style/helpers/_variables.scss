@@ -1535,4 +1535,14 @@ $utilities: (
       )
     )
   ),
+  "writing-mode": (
+    property: writing-mode,
+    class: writing-mode,
+    responsive: true,
+    values: (
+      "lr": vertical-lr,
+      "rl": vertical-rl,
+      "none": none
+    )
+  ),
 );
