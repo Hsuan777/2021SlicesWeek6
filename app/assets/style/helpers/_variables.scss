@@ -1535,14 +1535,13 @@ $utilities: (
       )
     )
   ),
-  "writing-mode": (
-    property: writing-mode,
-    class: writing-mode,
-    responsive: true,
+  "border-end": (
+    property: border-right,
+    class: border-end,
+    responsive: true, 
     values: (
-      "lr": vertical-lr,
-      "rl": vertical-rl,
-      "none": none
+      null: $border-width solid $border-color,
+      0: 0,
     )
   ),
 );

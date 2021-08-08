@@ -1,5 +1,5 @@
 ---
-title: 藝術展演購票網 | 設計類
+title: 2020 台味設計展
 layout: ./app/layout.ejs
 engine: ejs
 current: productList
@@ -8,44 +8,120 @@ current: productList
 <!-- 類別項目 -->
 <div class="border-bottom border-secondary sticky-top bg-white">
   <div class="container d-flex justify-content-center">
-    <ul class="category swiper list-unstyled d-flex flex-nowrap text-nowrap">
-      <li class="me-4">
+    <ul class="select swiper list-unstyled flex-nowrap text-nowrap">
+      <li class="select__item select__link me-4">
         <a href="#" class="py-4 px-5 link-secondary d-block">音樂</a>
       </li>
-      <li class="me-4">
+      <li class="select__item select__link me-4">
         <a href="#" class="py-4 px-5 link-secondary d-block">戲劇</a>
       </li>
-      <li class="me-4">
-        <a href="#" class="active py-4 px-5 link-secondary d-block">設計</a>
+      <li class="select__item select__link me-4">
+        <a href="productList.html" class="py-4 px-5 link-secondary d-block">設計</a>
       </li>
-      <li class="me-4">
+      <li class="select__item select__link me-4">
         <a href="#" class="py-4 px-5 link-secondary d-block">藝術</a>
       </li>
-      <li class="me-4">
+      <li class="select__item select__link me-4">
         <a href="#" class="py-4 px-5 link-secondary d-block">美食</a>
       </li>
-      <li class="me-4">
+      <li class="select__item select__link me-4">
         <a href="#" class="py-4 px-5 link-secondary d-block">旅遊</a>
       </li>
-      <li class="me-4">
+      <li class="select__item select__link me-4">
         <a href="#" class="py-4 px-5 link-secondary d-block">電影</a>
       </li>
-      <li class="me-4">
+      <li class="select__item select__link me-4">
         <a href="#" class="py-4 px-5 link-secondary d-block">親子</a>
       </li>
-      <li>
+      <li class="select__item select__link">
         <a href="#" class="py-4 px-5 link-secondary d-block">期間限定</a>
       </li>
     </ul>
   </div>
 </div>
 
-<section class="mb-5 mb-md-13">
+<div class="container mb-5 mb-md-13">
+  <!-- 產品細節 -->
+  <section class="productList__item pb-13">
+    <div class="row mb-10">
+      <div class="col-md-6">
+        <figure class="position-relative mb-2">
+          <img src="https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="2020 台味設計展" class="img img__productDetail__primary">
+          <p class="fz-large fw-bold d-none d-md-flex flex-column position-absolute top-50 end-0 translate-middle text-white">
+            <span>01&nbsp;</span>
+            <span>JUN&nbsp;</span>
+            <span class="d-none d-lg-block">|&nbsp;</span>
+            <span class="d-lg-none">—&nbsp;</span>
+            <span>31&nbsp;</span>
+             OCT
+          </p>
+        </figure>
+        <div class="d-flex align-items-center mb-1">
+          <h2 class="fw-bold fz-large me-2">2020 台味設計展</h2>
+          <i class="fab fa-facebook"></i>
+          <p class="fw-medium d-md-none ms-auto">01 JUN — 31 OCT</p>
+        </div>
+        <p class="fw-light mb-10 mb-md-0">一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。</p>
+      </div>
+      <div class="col-md-6">
+        <div class="row img__productDetail__primary mb-10">
+          <div class="col-md-6 d-flex flex-column justify-content-center align-items-center border-end-md border-dark mb-10 mb-md-0">
+            <ul class="list-unstyled d-flex align-items-center mb-6">
+              <li>
+                <input type="button" value="-" class="btn btn-link btn-lg">
+              </li>
+              <li class="px-md-6 px-lg-10">
+                <p class="fz-huger fw-bold">01</p>
+              </li>
+              <li>
+                <input type="button" value="+" class="btn btn-link btn-lg">
+              </li>
+            </ul>
+            <p>張</p>
+          </div>
+          <div class="col-md-6 d-flex flex-column justify-content-center align-items-center">
+            <p class="fz-huger fw-bold mb-6">NT$350</p>
+            <div class="position-relative">
+              <p class="fw-light">票種</p>
+              <ul class="select list-unstyled align-items-center position-absolute top-100 start-50 translate-middle-x">
+                <li class="select__item">
+                  <input type="button" value="學生" class="btn btn-link link-dark">
+                </li>
+                <li class="select__item active">
+                  <input type="button" value="全票" class="btn btn-link link-dark">
+                </li>
+                <li class="select__item">
+                  <input type="button" value="愛心" class="btn btn-link link-dark">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex pt-10 pt-md-0">
+          <input type="button" value="收藏展覽" class="btn btn-outline-primary btn-lg w-100 me-4 me-md-8">
+          <input type="button" value="購買票券" class="btn btn-success btn-lg w-100">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8 order-md-3 mb-5 mb-md-0">
+        <h3 class="fz-large fw-normal mb-3">
+          <span class="fw-bold">藝饗宴</span><br>
+          Celebration of Style and Art
+        </h3>
+        <p class="fw-light mb-4">匯集美、日、臺等地的藝術家與時尚設計師的作品。以跨界跨域的潮流文化為軸心，結合街頭塗鴉、時尚文化、名牌符號等，藉由各自特殊的表現語彙，傳達對社會當下流行文化的自我反嘲。然而這些深受大眾喜愛的藝術家，也讓「時尚」的概念不再扁平單一，相反的，他們展現了對社會更具魅力的反思，也提出了對於潮文化的自我觀點。</p>
+        <p class="fw-light">從臺灣前輩藝術家林淵、國際知名的超扁平藝術家村上隆、臺灣彩繪雕塑家洪易、以及當代新玩具雕塑代表Kaws 等，都受到許多收藏家的喜愛，同時也是當代藝術史上重要的一員。在這個展區，向藏家借展的作品都是一時之選，也反映出街頭藝術發展的某一種共性。另外，在與時尚跨界的藝術表現上，有永遠嘲諷時尚卻很時尚的藝術家Death NYC、臺灣新銳服裝設計師吳日云、尋找鎂光燈背後那真實藝術家身分的郭彥甫、年輕雕塑家賴冠仲、橫跨藝術與時尚設計師雙重身分的雙人組陳薇與李崇德、創造出療癒角色俊寶Zunbo 的韓國設計團隊Sakubo，以及日本藝術家喜久田尚美、南館麻美子等。展區透過空間的裝置與時尚語彙，完美詮釋了藝術、設計與潮流文化的多元樣貌。</p>
+      </div>
+      <div class="col-md-12 mb-4 mb-md-8">
+        <img src="https://images.unsplash.com/photo-1546013848-afcad42624d5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2978&q=80" alt="2020 台味設計展" class="img img__productDetail__secondary">
+      </div>
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1494660084187-79afc14b7c0c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1138&q=80" alt="2020 台味設計展" class="img img__productDetail__third">
+      </div>
+    </div>
+  </section>
   
-</section>
-
-<!-- 猜你也喜歡 -->
-<div class="container">
+  <!-- 猜你也喜歡 -->
   <section class="mb-5 mb-md-13">
     <h2 class="fw-bold mb-2 mb-md-6">猜你也喜歡...</h2>
     <ul class="swiper list-unstyled row flex-md-nowrap">
