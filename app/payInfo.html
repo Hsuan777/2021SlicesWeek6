@@ -1,8 +1,8 @@
 ---
-title: 填寫訂購資訊
+title: 填寫付款資訊
 layout: ./app/layout.ejs
 engine: ejs
-current: userInfo
+current: payInfo
 ---
 
 <section class="container mt-5">
@@ -18,7 +18,7 @@ current: userInfo
       <div class="position-absolute top-0 start-35 translate-middle bg-success rounded-pill"
         style="width: .5rem; height: .5rem;"></div>
       <p class="position-absolute top-0 start-35 translate-middle mt-4 pt-2 fw-medium">訂購資訊</p>
-      <div class="position-absolute top-0 start-65 translate-middle bg-white border border-success rounded-pill" 
+      <div class="position-absolute top-0 start-65 translate-middle bg-success rounded-pill" 
         style="width: .5rem; height: .5rem;"></div>
       <p class="position-absolute top-0 start-65 translate-middle text-nowrap mt-4 pt-2">付款資訊</p>
       <div class="position-absolute top-0 start-90 translate-middle bg-white border border-success rounded-pill" 
@@ -29,24 +29,19 @@ current: userInfo
   <div class="row mb-12 mb-lg-3">
     <!-- 訂購人資訊 -->
     <div class="col-lg-4 order-lg-1 mb-6">
-      <h2 class="fw-medium fz-large mb-4 mb-md-5">訂購人資訊</h2>
+      <h2 class="fw-medium fz-large mb-4 mb-md-5">填寫付款資訊</h2>
       <form action="" class="mb-13">
         <div class="mb-5">
-          <label for="userEmail" class="form-label">Email</label>
-          <input type="email" class="form-control" id="userEmail" placeholder="example@gmail.com">
+          <label for="creditCard" class="form-label">信用卡帳號</label>
+          <input type="text" class="form-control" id="creditCard" placeholder="Xxxx-xxxx-xxxx-xxxx">
         </div>
         <div class="mb-5">
-          <label for="userName" class="form-label">姓名</label>
-          <input type="text" class="form-control" id="userEmail" placeholder="請輸入姓名">
+          <label for="goodThru" class="form-label">有效日期</label>
+          <input type="text" class="form-control" id="goodThru" placeholder="MM/YY">
         </div>
         <div class="mb-5">
-          <label for="userTel" class="form-label">聯絡電話</label>
-          <input type="tel" class="form-control" id="userTel" placeholder="請輸入電話">
-        </div>
-        <div class="mb-5">
-          <label for="coupon" class="form-label">優惠碼</label>
-          <input type="text" class="form-control mb-1" id="coupon" placeholder="TG87526">
-          <p class="text-primary text-end fz-small">優惠碼已生效</p>
+          <label for="CVC" class="form-label">安全碼</label>
+          <input type="password" class="form-control mb-1" id="CVC" placeholder="">
         </div>
       </form>
       <div class="d-flex flex-column justify-content-end">
@@ -207,10 +202,10 @@ current: userInfo
   </div>
   <div class="row justify-content-between">
     <div class="col-6 col-lg-2 me-auto">
-      <a href="cartList.html" class="btn btn-outline-primary d-block w-100 me-4">返回</a>
+      <a href="userInfo.html" class="btn btn-outline-primary d-block w-100 me-4">返回</a>
     </div>
     <div class="col-6 col-lg-4">
-      <a href="payInfo.html" class="btn btn-success d-block w-100">下一步</a>
+      <a href="" class="btn btn-success d-block w-100">下一步</a>
     </div>
   </div>
 </section>
