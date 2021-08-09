@@ -1,31 +1,71 @@
 ---
-title: 檢視購物車
+title: 填寫訂購資訊
 layout: ./app/layout.ejs
 engine: ejs
-current: cartList
+current: userInfo
 ---
 
-<section class="container mt-5 h-75vh">
-  <div class="row h-100">
-    <div class="col-md-8">
-      <!-- 購物進度條 -->
-      <div class="position-relative mb-12 mb-md-13">
-        <div class="progress" style="height: 2px;">
-          <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="50"></div>
-        </div>
-        <div class="position-absolute top-0 start-10 translate-middle bg-success rounded-pill"
-          style="width: .5rem; height: .5rem;"></div>
-        <p class="position-absolute top-0 start-10 translate-middle mt-4 pt-2">確認訂單</p>
-        <div class="position-absolute top-0 start-35 translate-middle bg-white border border-success rounded-pill"
-          style="width: .5rem; height: .5rem;"></div>
-        <p class="position-absolute top-0 start-35 translate-middle mt-4 pt-2">訂購資訊</p>
-        <div class="position-absolute top-0 start-65 translate-middle bg-white border border-success rounded-pill" 
-          style="width: .5rem; height: .5rem;"></div>
-        <p class="position-absolute top-0 start-65 translate-middle text-nowrap mt-4 pt-2">付款資訊</p>
-        <div class="position-absolute top-0 start-90 translate-middle bg-white border border-success rounded-pill" 
-          style="width: .5rem; height: .5rem;"></div>
-        <p class="position-absolute top-0 start-90 translate-middle text-nowrap mt-4 pt-2">完成訂購</p>
+<section class="container mt-5">
+  <div class="col-lg-8">
+    <!-- 購物進度條 -->
+    <div class="position-relative mb-12 mb-md-13">
+      <div class="progress" style="height: 2px;">
+        <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="50"></div>
       </div>
+      <div class="position-absolute top-0 start-10 translate-middle bg-success rounded-pill"
+        style="width: .5rem; height: .5rem;"></div>
+      <p class="position-absolute top-0 start-10 translate-middle mt-4 pt-2">確認訂單</p>
+      <div class="position-absolute top-0 start-35 translate-middle bg-success rounded-pill"
+        style="width: .5rem; height: .5rem;"></div>
+      <p class="position-absolute top-0 start-35 translate-middle mt-4 pt-2 fw-medium">訂購資訊</p>
+      <div class="position-absolute top-0 start-65 translate-middle bg-white border border-success rounded-pill" 
+        style="width: .5rem; height: .5rem;"></div>
+      <p class="position-absolute top-0 start-65 translate-middle text-nowrap mt-4 pt-2">付款資訊</p>
+      <div class="position-absolute top-0 start-90 translate-middle bg-white border border-success rounded-pill" 
+        style="width: .5rem; height: .5rem;"></div>
+      <p class="position-absolute top-0 start-90 translate-middle text-nowrap mt-4 pt-2">完成訂購</p>
+    </div>
+  </div>
+  <div class="row mb-12 mb-lg-3">
+    <!-- 訂購人資訊 -->
+    <div class="col-lg-4 order-lg-1 mb-6 mb-md-0">
+      <h2 class="fw-medium fz-large">訂購人資訊</h2>
+      <form action="">
+        <div class="mb-5">
+          <label for="userEmail" class="form-label">Email</label>
+          <input type="email" class="form-control" id="userEmail" placeholder="example@gmail.com">
+        </div>
+        <div class="mb-5">
+          <label for="userName" class="form-label">姓名</label>
+          <input type="text" class="form-control" id="userEmail" placeholder="請輸入姓名">
+        </div>
+        <div class="mb-5">
+          <label for="userTel" class="form-label">聯絡電話</label>
+          <input type="tel" class="form-control" id="userTel" placeholder="請輸入電話">
+        </div>
+        <div class="mb-5">
+          <label for="coupon" class="form-label">優惠碼</label>
+          <input type="text" class="form-control mb-1" id="coupon" placeholder="TG87526">
+          <p class="text-primary text-end fz-small">優惠碼已生效</p>
+        </div>
+      </form>
+      <div class="d-flex flex-column justify-content-end">
+        <p class="d-flex fw-medium">
+          <span class="me-auto">小計</span>
+          <span class="fw-light">NT1050</span> 
+        </p>
+        <p class="d-flex fw-medium">
+          <span class="me-auto">折扣</span>
+          -NT$50
+        </p>
+        <p class="d-flex fw-medium fz-large">
+          <span class="me-auto">總金額</span>
+          NT$1000
+        </p>
+      </div>
+    </div>
+    <!-- 購物車清單 -->
+    <div class="col-lg-8">
       <ul class="list-unstyled">
         <li class="row align-items-center mb-5">
           <div class="col-md-6">
@@ -211,15 +251,14 @@ current: cartList
           </div>
         </li>
       </ul>
+    </div> 
+  </div>
+  <div class="row justify-content-between">
+    <div class="col-6 col-lg-2 me-auto">
+      <a href="cartList.html" class="btn btn-outline-primary d-block w-100 me-4">返回</a>
     </div>
-    <div class="col-md-4">
-      <div class="d-flex flex-column justify-content-end h-100">
-        <p class="d-flex fw-medium fz-large mb-3 mb-4">
-          <span class="me-auto">小計</span>
-          NT1050
-        </p>
-        <a href="userInfo.html" class="btn btn-success d-block w-100">下一步</a>
-      </div>
+    <div class="col-6 col-lg-4">
+      <a href="" class="btn btn-success d-block w-100">下一步</a>
     </div>
   </div>
 </section>
