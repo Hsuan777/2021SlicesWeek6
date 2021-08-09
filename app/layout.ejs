@@ -62,10 +62,13 @@
     </footer>
 
     <!-- offcanvas -->
-    <div class="offcanvas offcanvas-end bg-dark pt-5 pt-md-8 pb-7 pb-md-6 px-4 px-lg-8" tabindex="-1" id="offcanvasRight" data-bs-scroll="false" data-bs-backdrop="false" aria-labelledby="offcanvasRightLabel">
-      <h2 class="text-white mb-3">Cart List</h2>
-      <ul class="list-unstyled">
-        <li class="bg-white rounded">
+    <div class="offcanvas offcanvas-end bg-dark pt-5 pt-md-8 pb-7 pb-md-6 ps-4 ps-lg-8 pe-2 pe-lg-4" tabindex="-1" id="offcanvasRight" data-bs-scroll="false" data-bs-backdrop="false" aria-labelledby="offcanvasRightLabel">
+      <div class="d-flex align-items-center">
+        <h2 class="text-white mb-3 me-auto">Cart List</h2>
+        <input type="button" value="" class="btn-close bg-white" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+      </div>
+      <ul class="cartScrollbar list-unstyled overflow-auto pe-2 pe-lg-4 mb-5">
+        <li class="bg-white rounded mb-2 mb-lg-3">
           <input type="button" value="" class="btn-close pt-1 px-1">
           <div class="d-flex px-4 px-md-8 pb-4 pb-mb-6">
             <img src="https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="2020 台味設計展" class="img img__cart me-4">
@@ -83,20 +86,101 @@
                 <p>NT$350</p>
               </li>
             </ul>
-            <ul class="list-unstyled d-flex flex-column flex-lg-row align-items-center ms-auto">
+            <ul class="list-unstyled d-flex flex-column flex-column-reverse flex-lg-row align-items-center ms-auto">
               <li>
-                <input type="button" value="-" class="btn btn-link">
+                <button tyep="button" class="btn btn-link link-dark d-flex p-2">
+                  <span class="material-icons-outlined">remove</span>
+                </button>
               </li>
               <li class="px-4">
                 <p class="fz-large fw-bold">01</p>
               </li>
               <li>
-                <input type="button" value="+" class="btn btn-link">
+                <button tyep="button" class="btn btn-link link-dark d-flex p-2">
+                  <span class="material-icons-outlined">add</span>               
+                </button>
               </li>
             </ul>
           </div>
         </li>
+        <li class="bg-white rounded mb-2 mb-lg-3">
+          <input type="button" value="" class="btn-close pt-1 px-1">
+          <div class="d-flex px-4 px-md-8 pb-4 pb-mb-6">
+            <img src="https://images.unsplash.com/photo-1510520001634-6af954f45759?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1353&q=80" alt="No.22 線上設計展" class="img img__cart me-4">
+            <ul class="list-unstyled">
+              <li class="fw-bold mb-1">
+                <h3 class="fz-medium text-nowrap">2020 台味設計展</h3>
+              </li>
+              <li class="fw-medium text-nowrap mb-1">
+                <p>01 JUN — 31 OCT</p>
+              </li>
+              <li class="text-secondary mb-4">
+                <p>全票</p>
+              </li>
+              <li class="fw-bold fz-large">
+                <p>NT$350</p>
+              </li>
+            </ul>
+            <ul class="list-unstyled d-flex flex-column flex-column-reverse flex-lg-row align-items-center ms-auto">
+              <li>
+                <button tyep="button" class="btn btn-link link-dark d-flex p-2">
+                  <span class="material-icons-outlined">remove</span>
+                </button>         
+              </li>
+              <li class="px-4">
+                <p class="fz-large fw-bold">01</p>
+              </li>
+              <li>
+                <button tyep="button" class="btn btn-link link-dark d-flex p-2">
+                  <span class="material-icons-outlined">add</span>               
+                </button>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="bg-white rounded mb-2 mb-lg-3">
+          <input type="button" value="" class="btn-close pt-1 px-1">
+          <div class="d-flex px-4 px-md-8 pb-4 pb-mb-6">
+            <img src="https://images.unsplash.com/photo-1545178803-4056771d60a3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="高雄設計節" class="img img__cart me-4">
+            <ul class="list-unstyled">
+              <li class="fw-bold mb-1">
+                <h3 class="fz-medium text-nowrap">高雄設計節</h3>
+              </li>
+              <li class="fw-medium text-nowrap mb-1">
+                <p>01 JUN — 31 OCT</p>
+              </li>
+              <li class="text-secondary mb-4">
+                <p>全票</p>
+              </li>
+              <li class="fw-bold fz-large">
+                <p>NT$350</p>
+              </li>
+            </ul>
+            <ul class="list-unstyled d-flex flex-column flex-column-reverse flex-lg-row align-items-center ms-auto">
+              <li>
+                <button tyep="button" class="btn btn-link link-dark d-flex p-2">
+                  <span class="material-icons-outlined">remove</span>
+                </button>
+              </li>       
+              <li class="px-4">
+                <p class="fz-large fw-bold">01</p>
+              </li>             
+              <li>
+                <button tyep="button" class="btn btn-link link-dark d-flex p-2">
+                  <span class="material-icons-outlined">add</span>
+                </button>
+              </li>    
+            </ul>
+          </div>
+        </li>
       </ul>
+      <div class="d-flex align-items-center">
+        <p class="text-white me-auto fw-medium fz-large">
+          <span class="me-6">小計</span>
+          NT$1050
+        </p>
+        <a href="cartList.html" type="button" class="btn btn-outline-primary text-primary py-2 px-6 bg-white">前往結帳</a>
+      </div>
     </div>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
