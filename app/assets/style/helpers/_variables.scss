@@ -1561,7 +1561,25 @@ $utilities: (
       50: 50%,
       75: 75%,
       100: 100%,
-      75vh: 75vh,
+      70vh: 70vh,
+      100vh: 100vh,
+      auto: auto
+    )
+  ),
+  "min-height": (
+    property: min-height,
+    class: min-h,
+    responsive: true, 
+    values: (
+      25: 25%,
+      50: 50%,
+      75: 75%,
+      100: 100%,
+      30vh: 30vh,
+      40vh: 40vh,
+      50vh: 50vh,
+      60vh: 60vh,
+      70vh: 70vh,
       100vh: 100vh,
       auto: auto
     )

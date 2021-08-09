@@ -5,8 +5,8 @@ engine: ejs
 current: cartList
 ---
 
-<section class="container mt-5 h-75vh">
-  <div class="row h-100">
+<section class="container mt-5">
+  <div class="row">
     <div class="col-md-8">
       <!-- 購物進度條 -->
       <div class="position-relative mb-12 mb-md-13">
@@ -26,6 +26,8 @@ current: cartList
           style="width: .5rem; height: .5rem;"></div>
         <p class="position-absolute top-0 start-90 translate-middle text-nowrap mt-4 pt-2">完成訂購</p>
       </div>
+    </div>
+    <div class="col-md-8"> 
       <ul class="list-unstyled">
         <li class="row align-items-center mb-5">
           <div class="col-md-6">
@@ -212,7 +214,7 @@ current: cartList
         </li>
       </ul>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 min-h-30vh min-h-md-50vh min-h-lg-70vh">
       <div class="d-flex flex-column justify-content-end h-100">
         <p class="d-flex fw-medium fz-large mb-3 mb-4">
           <span class="me-auto">小計</span>
