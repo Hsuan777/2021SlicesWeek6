@@ -1,0 +1,225 @@
+---
+title: 檢視購物車
+layout: ./app/layout.ejs
+engine: ejs
+current: cartList
+---
+
+<section class="container mt-5 h-75vh">
+  <div class="row h-100">
+    <div class="col-md-8">
+      <!-- 購物進度條 -->
+      <div class="position-relative mb-12 mb-md-13">
+        <div class="progress" style="height: 2px;">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="50"></div>
+        </div>
+        <div class="position-absolute top-0 start-10 translate-middle bg-success rounded-pill"
+          style="width: .5rem; height: .5rem;"></div>
+        <p class="position-absolute top-0 start-10 translate-middle mt-4 pt-2">確認訂單</p>
+        <div class="position-absolute top-0 start-35 translate-middle bg-white border border-success rounded-pill"
+          style="width: .5rem; height: .5rem;"></div>
+        <p class="position-absolute top-0 start-35 translate-middle mt-4 pt-2">訂購資訊</p>
+        <div class="position-absolute top-0 start-65 translate-middle bg-white border border-success rounded-pill" 
+          style="width: .5rem; height: .5rem;"></div>
+        <p class="position-absolute top-0 start-65 translate-middle text-nowrap mt-4 pt-2">付款資訊</p>
+        <div class="position-absolute top-0 start-90 translate-middle bg-white border border-success rounded-pill" 
+          style="width: .5rem; height: .5rem;"></div>
+        <p class="position-absolute top-0 start-90 translate-middle text-nowrap mt-4 pt-2">完成訂購</p>
+      </div>
+      <ul class="list-unstyled">
+        <li class="row align-items-center mb-5">
+          <div class="col-md-6">
+            <div class="row">
+              <!-- 商品圖片 -->
+              <div class="col-6">
+                <img src="https://images.unsplash.com/photo-1545987796-b199d6abb1b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="2020 台味設計展" class="img img__cartView">
+              </div>
+              <!-- 商品名稱與日期 -->
+              <div class="col-6">
+                <ul class="list-unstyled">
+                  <li class="d-flex align-items-center">
+                    <p class="fw-bold text-nowrap">2020 台味設計展</p>
+                    <div class="d-md-none ms-auto">
+                      <button tyep="button" class="btn btn-link link-dark d-flex p-0">
+                        <span class="material-icons-outlined">close</span>
+                      </button>
+                    </div>
+                  </li>
+                  <li>
+                    <p class="fw-medium text-nowrap">01 JUN — 31 OCT</p>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <p class="text-secondary me-1">全票</p>
+                    <p class="fw-bold fz-large d-lg-none">1</p>
+                    <p class="fw-bold fz-large d-md-none ms-auto">NT$350</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- 價格、數量、刪除 -->
+          <div class="col-md-6">
+            <ul class="list-unstyled d-flex justify-content-center justify-content-lg-between align-items-center">
+              <li class="d-none d-md-block">
+                <p class="fw-bold fz-large me-5">NT$350</p>
+              </li>
+              <li class="d-none d-lg-block">
+                <ul class="list-unstyled d-flex align-items-center">
+                  <li>
+                    <button tyep="button" class="btn btn-link link-dark d-flex p-2">
+                      <span class="material-icons-outlined">remove</span>
+                    </button>
+                  </li>
+                  <li class="px-2">
+                    <p class="fw-bold fz-large">01</p>
+                  </li>
+                  <li>
+                    <button tyep="button" class="btn btn-link link-dark d-flex p-2">
+                      <span class="material-icons-outlined">add</span>
+                    </button>
+                  </li>
+                </ul>
+              </li>
+              <li class="d-none d-md-block">
+                <button tyep="button" class="btn btn-link link-dark d-flex p-2">
+                  <span class="material-icons-outlined">close</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="row align-items-center mb-5">
+          <div class="col-md-6">
+            <div class="row">
+              <!-- 商品圖片 -->
+              <div class="col-6">
+                <img src="https://images.unsplash.com/photo-1510520001634-6af954f45759?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1353&q=80" alt="No.22 線上設計展" class="img img__cartView">
+              </div>
+              <!-- 商品名稱與日期 -->
+              <div class="col-6">
+                <ul class="list-unstyled">
+                  <li class="d-flex align-items-center">
+                    <p class="fw-bold text-nowrap">No.22 線上設計展</p>
+                    <div class="d-md-none ms-auto">
+                      <button tyep="button" class="btn btn-link link-dark d-flex p-0">
+                        <span class="material-icons-outlined">close</span>
+                      </button>
+                    </div>
+                  </li>
+                  <li>
+                    <p class="fw-medium text-nowrap">01 JUN — 31 OCT</p>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <p class="text-secondary me-1">全票</p>
+                    <p class="fw-bold fz-large d-lg-none">1</p>
+                    <p class="fw-bold fz-large d-md-none ms-auto">NT$350</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- 價格、數量、刪除 -->
+          <div class="col-md-6">
+            <ul class="list-unstyled d-flex justify-content-center justify-content-lg-between align-items-center">
+              <li class="d-none d-md-block">
+                <p class="fw-bold fz-large me-5">NT$350</p>
+              </li>
+              <li class="d-none d-lg-block">
+                <ul class="list-unstyled d-flex align-items-center">
+                  <li>
+                    <button tyep="button" class="btn btn-link link-dark d-flex p-2">
+                      <span class="material-icons-outlined">remove</span>
+                    </button>
+                  </li>
+                  <li class="px-2">
+                    <p class="fw-bold fz-large">01</p>
+                  </li>
+                  <li>
+                    <button tyep="button" class="btn btn-link link-dark d-flex p-2">
+                      <span class="material-icons-outlined">add</span>
+                    </button>
+                  </li>
+                </ul>
+              </li>
+              <li class="d-none d-md-block">
+                <button tyep="button" class="btn btn-link link-dark d-flex p-2">
+                  <span class="material-icons-outlined">close</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="row align-items-center">
+          <div class="col-md-6">
+            <div class="row">
+              <!-- 商品圖片 -->
+              <div class="col-6">
+                <img src="https://images.unsplash.com/photo-1545178803-4056771d60a3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="高雄設計節" class="img img__cartView">
+              </div>
+              <!-- 商品名稱與日期 -->
+              <div class="col-6">
+                <ul class="list-unstyled">
+                  <li class="d-flex align-items-center">
+                    <p class="fw-bold text-nowrap">高雄設計節</p>
+                    <div class="d-md-none ms-auto">
+                      <button tyep="button" class="btn btn-link link-dark d-flex p-0">
+                        <span class="material-icons-outlined">close</span>
+                      </button>
+                    </div>
+                  </li>
+                  <li>
+                    <p class="fw-medium text-nowrap">01 JUN — 31 OCT</p>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <p class="text-secondary me-1">全票</p>
+                    <p class="fw-bold fz-large d-lg-none">1</p>
+                    <p class="fw-bold fz-large d-md-none ms-auto">NT$350</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- 價格、數量、刪除 -->
+          <div class="col-md-6">
+            <ul class="list-unstyled d-flex justify-content-center justify-content-lg-between align-items-center">
+              <li class="d-none d-md-block">
+                <p class="fw-bold fz-large me-5">NT$350</p>
+              </li>
+              <li class="d-none d-lg-block">
+                <ul class="list-unstyled d-flex align-items-center">
+                  <li>
+                    <button tyep="button" class="btn btn-link link-dark d-flex p-2">
+                      <span class="material-icons-outlined">remove</span>
+                    </button>
+                  </li>
+                  <li class="px-2">
+                    <p class="fw-bold fz-large">01</p>
+                  </li>
+                  <li>
+                    <button tyep="button" class="btn btn-link link-dark d-flex p-2">
+                      <span class="material-icons-outlined">add</span>
+                    </button>
+                  </li>
+                </ul>
+              </li>
+              <li class="d-none d-md-block">
+                <button tyep="button" class="btn btn-link link-dark d-flex p-2">
+                  <span class="material-icons-outlined">close</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <div class="d-flex flex-column justify-content-end h-100">
+        <p class="d-flex fw-medium fz-large mb-3 mb-4">
+          <span class="me-auto">小計</span>
+          NT1050
+        </p>
+        <a href="" class="btn btn-success d-block w-100">下一步</a>
+      </div>
+    </div>
+  </div>
+</section>
