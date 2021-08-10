@@ -1,0 +1,23 @@
+.select {
+  display: flex;
+  &__item {
+    position: relative;
+    &.active, &:hover {
+      &::after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-bottom: 1px solid map-get($theme-colors, "success");
+      }
+    }
+  }
+  &__link {
+    &.active, &:hover {
+      &::after {
+        bottom: 10px;
+      }
+    }
+  }
+}

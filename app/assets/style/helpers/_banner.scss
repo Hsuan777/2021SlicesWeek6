@@ -1,0 +1,18 @@
+.banner {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__index {
+    height: 480px;
+    background-image: url("https://images.unsplash.com/photo-1506846540181-347008948fff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=893&q=80");
+
+  }
+  &__review {
+    height: 480px;
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/people2.png?raw=true");
+  }
+  &__subscription {
+    height: 400px;
+    background-image: url("https://images.unsplash.com/photo-1536768767433-cc552f38def9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  }
+}

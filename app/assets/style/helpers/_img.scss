@@ -1,0 +1,44 @@
+.img { 
+  object-fit: cover;
+  width: 100%;
+  // index.html
+  &__product {
+    height: 345px;
+    @include media-breakpoint-up(md) {
+      height: 350px;
+    }
+  }
+  // productList.html
+  &__productList {
+    height: 221px;
+    @include media-breakpoint-up(md) {
+      height: 285px;
+    }
+  }
+  // product.html
+  &__productDetail {
+    &__primary {
+      height: 256px;
+      @include media-breakpoint-up(md) {
+        height: 226px;
+      }
+      @include media-breakpoint-up(lg) {
+        height: 256px;
+      }
+    }
+    &__secondary {
+      height: 400px;
+    }
+    &__third {
+      height: 559px;
+    }
+  }
+  &__offcanvas {
+    width: 120px;
+    height: 120px;
+  }
+  &__cartView {
+    width: 165px;
+    height: 84px;
+  }
+}
