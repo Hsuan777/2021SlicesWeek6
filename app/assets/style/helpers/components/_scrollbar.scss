@@ -1,0 +1,16 @@
+.cartScrollbar {
+  //捲軸底色
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: map-get($theme-colors, "secondary");
+  }
+  //捲軸寬度
+  &::-webkit-scrollbar {
+    width: 2px;
+    background-color: black;
+  }
+  //捲軸本體顏色
+  &::-webkit-scrollbar-thumb {
+    background-color: map-get($theme-colors, "success");
+  }
+}

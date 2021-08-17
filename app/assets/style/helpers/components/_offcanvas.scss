@@ -1,0 +1,13 @@
+.offcanvas-end {
+  width: 100%;
+  margin-top: 71px;
+  @include media-breakpoint-up(sm){
+    width: 375px;
+  }
+  @include media-breakpoint-up(md){
+    margin-top: 95px;
+  }
+  @include media-breakpoint-up(lg){
+    width: 540px;
+  }
+}
