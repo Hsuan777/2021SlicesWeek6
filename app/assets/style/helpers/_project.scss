@@ -38,3 +38,12 @@
     background-color: map-get($theme-colors, "success");
   }
 }
+
+.footerBtn {
+  &--height {
+    min-height: calc(90vh - 68px - 67.6px);
+    @include media-breakpoint-up(md) {
+      min-height: calc(90vh - 92px - 67.6px);
+    }
+  }
+}

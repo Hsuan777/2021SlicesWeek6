@@ -1,29 +1,31 @@
 ---
 title: 填寫訂購資訊
-layout: ./app/layout.ejs
+layout: ./app/payLayout.ejs
 engine: ejs
 current: userInfo
 ---
 
 <section class="container mt-5">
-  <div class="col-lg-8">
-    <!-- 購物進度條 -->
-    <div class="position-relative mb-12 mb-md-13">
-      <div class="progress" style="height: 2px;">
-        <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="50"></div>
+  <div class="row">
+    <div class="col-lg-8">
+      <!-- 購物進度條 -->
+      <div class="position-relative mb-12 mb-md-13">
+        <div class="progress" style="height: 2px;">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 100%;" aria-valuenow="50"></div>
+        </div>
+        <div class="position-absolute top-0 start-10 translate-middle bg-success rounded-pill"
+          style="width: .5rem; height: .5rem;"></div>
+        <p class="position-absolute top-0 start-10 translate-middle mt-4 pt-2">確認訂單</p>
+        <div class="position-absolute top-0 start-35 translate-middle bg-success rounded-pill"
+          style="width: .5rem; height: .5rem;"></div>
+        <p class="position-absolute top-0 start-35 translate-middle mt-4 pt-2 fw-medium">訂購資訊</p>
+        <div class="position-absolute top-0 start-65 translate-middle bg-white border border-success rounded-pill" 
+          style="width: .5rem; height: .5rem;"></div>
+        <p class="position-absolute top-0 start-65 translate-middle text-nowrap mt-4 pt-2">付款資訊</p>
+        <div class="position-absolute top-0 start-90 translate-middle bg-white border border-success rounded-pill" 
+          style="width: .5rem; height: .5rem;"></div>
+        <p class="position-absolute top-0 start-90 translate-middle text-nowrap mt-4 pt-2">完成訂購</p>
       </div>
-      <div class="position-absolute top-0 start-10 translate-middle bg-success rounded-pill"
-        style="width: .5rem; height: .5rem;"></div>
-      <p class="position-absolute top-0 start-10 translate-middle mt-4 pt-2">確認訂單</p>
-      <div class="position-absolute top-0 start-35 translate-middle bg-success rounded-pill"
-        style="width: .5rem; height: .5rem;"></div>
-      <p class="position-absolute top-0 start-35 translate-middle mt-4 pt-2 fw-medium">訂購資訊</p>
-      <div class="position-absolute top-0 start-65 translate-middle bg-white border border-success rounded-pill" 
-        style="width: .5rem; height: .5rem;"></div>
-      <p class="position-absolute top-0 start-65 translate-middle text-nowrap mt-4 pt-2">付款資訊</p>
-      <div class="position-absolute top-0 start-90 translate-middle bg-white border border-success rounded-pill" 
-        style="width: .5rem; height: .5rem;"></div>
-      <p class="position-absolute top-0 start-90 translate-middle text-nowrap mt-4 pt-2">完成訂購</p>
     </div>
   </div>
   <div class="row mb-12 mb-lg-3">
@@ -37,7 +39,7 @@ current: userInfo
         </div>
         <div class="mb-5">
           <label for="userName" class="form-label">姓名</label>
-          <input type="text" class="form-control" id="userEmail" placeholder="請輸入姓名">
+          <input type="text" class="form-control" id="userName" placeholder="請輸入姓名">
         </div>
         <div class="mb-5">
           <label for="userTel" class="form-label">聯絡電話</label>
@@ -78,7 +80,7 @@ current: userInfo
               <div class="col-6">
                 <ul class="list-unstyled">
                   <li class="d-flex align-items-center">
-                    <p class="fw-bold text-nowrap">2020 台味設計展</p>
+                    <h2 class="fw-bold fz-medium text-nowrap">2020 台味設計展</h2>
                     <div class="d-md-none ms-auto">
                       <button tyep="button" class="btn btn-link link-dark d-flex p-0">
                         <span class="material-icons-outlined">close</span>
@@ -123,7 +125,7 @@ current: userInfo
               <div class="col-6">
                 <ul class="list-unstyled">
                   <li class="d-flex align-items-center">
-                    <p class="fw-bold text-nowrap">No.22 線上設計展</p>
+                    <h2 class="fw-bold fz-medium text-nowrap">No.22 線上設計展</h2>
                     <div class="d-md-none ms-auto">
                       <button tyep="button" class="btn btn-link link-dark d-flex p-0">
                         <span class="material-icons-outlined">close</span>
@@ -168,7 +170,7 @@ current: userInfo
               <div class="col-6">
                 <ul class="list-unstyled">
                   <li class="d-flex align-items-center">
-                    <p class="fw-bold text-nowrap">高雄設計節</p>
+                    <h2 class="fw-bold fz-medium text-nowrap">高雄設計節</h2>
                     <div class="d-md-none ms-auto">
                       <button tyep="button" class="btn btn-link link-dark d-flex p-0">
                         <span class="material-icons-outlined">close</span>
@@ -205,7 +207,7 @@ current: userInfo
       </ul>
     </div> 
   </div>
-  <div class="row justify-content-between">
+  <div class="row justify-content-between mb-10">
     <div class="col-6 col-lg-2 me-auto">
       <a href="cartList.html" class="btn btn-outline-primary d-block w-100 me-4">返回</a>
     </div>
