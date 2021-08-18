@@ -17418,6 +17418,75 @@ p {
   display: none;
 }
 
+.cartScrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #707070;
+}
+
+.cartScrollbar::-webkit-scrollbar {
+  width: 2px;
+  background-color: black;
+}
+
+.cartScrollbar::-webkit-scrollbar-thumb {
+  background-color: #E31277;
+}
+
+.offcanvas-end {
+  width: 100%;
+  margin-top: 71px;
+}
+
+@media (min-width: 576px) {
+  .offcanvas-end {
+    width: 375px;
+  }
+}
+
+@media (min-width: 768px) {
+  .offcanvas-end {
+    margin-top: 95px;
+  }
+}
+
+@media (min-width: 992px) {
+  .offcanvas-end {
+    width: 540px;
+  }
+}
+
+.main {
+  min-height: calc(90vh - 68px);
+}
+
+@media (min-width: 768px) {
+  .main {
+    min-height: calc(90vh - 92px);
+  }
+}
+
+.productList__item {
+  padding: 44px 0;
+}
+
+@media (min-width: 768px) {
+  .productList__item {
+    padding-top: 80px;
+    padding-bottom: 52px;
+  }
+}
+
+.footerBtn--height {
+  min-height: calc(90vh - 68px - 67.6px);
+}
+
+@media (min-width: 768px) {
+  .footerBtn--height {
+    min-height: calc(90vh - 92px - 67.6px);
+  }
+}
+
 .banner {
   background-position: center;
   background-size: cover;
@@ -17497,65 +17566,6 @@ p {
 .img__cartView {
   width: 165px;
   height: 84px;
-}
-
-.main {
-  min-height: calc(90vh - 68px);
-}
-
-@media (min-width: 768px) {
-  .main {
-    min-height: calc(90vh - 92px);
-  }
-}
-
-.productList__item {
-  padding: 44px 0;
-}
-
-@media (min-width: 768px) {
-  .productList__item {
-    padding-top: 80px;
-    padding-bottom: 52px;
-  }
-}
-
-.offcanvas-end {
-  width: 100%;
-  margin-top: 71px;
-}
-
-@media (min-width: 576px) {
-  .offcanvas-end {
-    width: 375px;
-  }
-}
-
-@media (min-width: 768px) {
-  .offcanvas-end {
-    margin-top: 95px;
-  }
-}
-
-@media (min-width: 992px) {
-  .offcanvas-end {
-    width: 540px;
-  }
-}
-
-.cartScrollbar::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #707070;
-}
-
-.cartScrollbar::-webkit-scrollbar {
-  width: 2px;
-  background-color: black;
-}
-
-.cartScrollbar::-webkit-scrollbar-thumb {
-  background-color: #E31277;
 }
 
 /*# sourceMappingURL=all.css.map */
