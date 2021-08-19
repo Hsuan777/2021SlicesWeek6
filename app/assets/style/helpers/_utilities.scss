@@ -1,0 +1,88 @@
+$utilities: map-merge(
+  $utilities,(
+    // 40 36 32 28 24 20 16 14 12
+    "font-size": (
+      property: font-size,
+      class: fz,
+      responsive: true,
+      values: (
+        "smaller": .75rem,
+        "small": .875rem,
+        "medium": 1rem,
+        "large": 1.25rem,
+        "larger": 1.5rem,
+        "x-large": 1.75rem,
+        "xx-large": 2rem,
+        "huge": 2.25rem,
+        "huger": 2.5rem,
+      )
+    ),
+    "font-weight": map-merge(
+      map-get($utilities, "font-weight"),
+      (
+        responsive: true,
+        values: map-merge(
+          map-get(map-get($utilities, "font-weight"), "values"), 
+          (
+            medium: $font-weight-medium,
+          )
+        )
+      )
+    ),
+    "opacity": (
+      property: opacity,
+      values: (
+        0: 0,
+        25: .25,
+        50: .5,
+        75: .75,
+        90: .90,
+        100: 1,
+      )
+    ),
+    "background-color": map-merge(
+      map-get($utilities, "background-color"),
+      (
+        responsive: true,
+      )
+    ),
+    "border-end": map-merge(
+      map-get($utilities, "border-end"),
+      (
+        responsive: true, 
+      )
+    ),
+    "height": (
+      property: height,
+      class: h,
+      responsive: true, 
+      values: (
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        70vh: 70vh,
+        100vh: 100vh,
+        auto: auto
+      )
+    ),
+    "min-height": (
+      property: min-height,
+      class: min-h,
+      responsive: true, 
+      values: (
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        30vh: 30vh,
+        40vh: 40vh,
+        50vh: 50vh,
+        60vh: 60vh,
+        70vh: 70vh,
+        100vh: 100vh,
+        auto: auto
+      )
+    ),
+  )
+);

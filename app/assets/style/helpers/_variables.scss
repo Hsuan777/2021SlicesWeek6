@@ -453,6 +453,7 @@ $font-size-lg:                $font-size-base * 1.25 !default;
 $font-weight-lighter:         lighter !default;
 $font-weight-light:           300 !default;
 $font-weight-normal:          400 !default;
+$font-weight-medium:          500 ;
 $font-weight-bold:            700 !default;
 $font-weight-bolder:          bolder !default;
 
@@ -1488,100 +1489,100 @@ $kbd-bg:                            $gray-900 !default;
 
 $pre-color:                         null !default;
 
-$utilities: (
-  // 40 36 32 28 24 20 16 14 12
-  "font-size": (
-    property: font-size,
-    class: fz,
-    responsive: true,
-    values: (
-      "smaller": .75rem,
-      "small": .875rem,
-      "medium": 1rem,
-      "large": 1.25rem,
-      "larger": 1.5rem,
-      "x-large": 1.75rem,
-      "xx-large": 2rem,
-      "huge": 2.25rem,
-      "huger": 2.5rem,
-    )
-  ),
-  "font-weight": (
-    property: font-weight,
-    class: fw,
-    responsive: true,
-    values: (
-      light: $font-weight-light,
-      lighter: $font-weight-lighter,
-      normal: $font-weight-normal,
-      medium: 500,
-      bold: $font-weight-bold,
-      bolder: $font-weight-bolder
-    )
-  ),
-  "opacity": (
-    property: opacity,
-    values: (
-      0: 0,
-      25: .25,
-      50: .5,
-      75: .75,
-      90: .90,
-      100: 1,
-    )
-  ),
-  "background-color": (
-    property: background-color,
-    class: bg,
-    responsive: true,
-    values: map-merge(
-      $theme-colors,
-      (
-        "body": $body-bg,
-        "white": $white,
-        "transparent": transparent
-      )
-    )
-  ),
-  "border-end": (
-    property: border-right,
-    class: border-end,
-    responsive: true, 
-    values: (
-      null: $border-width solid $border-color,
-      0: 0,
-    )
-  ),
-  "height": (
-    property: height,
-    class: h,
-    responsive: true, 
-    values: (
-      25: 25%,
-      50: 50%,
-      75: 75%,
-      100: 100%,
-      70vh: 70vh,
-      100vh: 100vh,
-      auto: auto
-    )
-  ),
-  "min-height": (
-    property: min-height,
-    class: min-h,
-    responsive: true, 
-    values: (
-      25: 25%,
-      50: 50%,
-      75: 75%,
-      100: 100%,
-      30vh: 30vh,
-      40vh: 40vh,
-      50vh: 50vh,
-      60vh: 60vh,
-      70vh: 70vh,
-      100vh: 100vh,
-      auto: auto
-    )
-  ),
-);
+// $utilities: (
+//   // 40 36 32 28 24 20 16 14 12
+//   "font-size": (
+//     property: font-size,
+//     class: fz,
+//     responsive: true,
+//     values: (
+//       "smaller": .75rem,
+//       "small": .875rem,
+//       "medium": 1rem,
+//       "large": 1.25rem,
+//       "larger": 1.5rem,
+//       "x-large": 1.75rem,
+//       "xx-large": 2rem,
+//       "huge": 2.25rem,
+//       "huger": 2.5rem,
+//     )
+//   ),
+//   "font-weight": (
+//     property: font-weight,
+//     class: fw,
+//     responsive: true,
+//     values: (
+//       light: $font-weight-light,
+//       lighter: $font-weight-lighter,
+//       normal: $font-weight-normal,
+//       medium: 500,
+//       bold: $font-weight-bold,
+//       bolder: $font-weight-bolder
+//     )
+//   ),
+//   "opacity": (
+//     property: opacity,
+//     values: (
+//       0: 0,
+//       25: .25,
+//       50: .5,
+//       75: .75,
+//       90: .90,
+//       100: 1,
+//     )
+//   ),
+//   "background-color": (
+//     property: background-color,
+//     class: bg,
+//     responsive: true,
+//     values: map-merge(
+//       $theme-colors,
+//       (
+//         "body": $body-bg,
+//         "white": $white,
+//         "transparent": transparent
+//       )
+//     )
+//   ),
+//   "border-end": (
+//     property: border-right,
+//     class: border-end,
+//     responsive: true, 
+//     values: (
+//       null: $border-width solid $border-color,
+//       0: 0,
+//     )
+//   ),
+//   "height": (
+//     property: height,
+//     class: h,
+//     responsive: true, 
+//     values: (
+//       25: 25%,
+//       50: 50%,
+//       75: 75%,
+//       100: 100%,
+//       70vh: 70vh,
+//       100vh: 100vh,
+//       auto: auto
+//     )
+//   ),
+//   "min-height": (
+//     property: min-height,
+//     class: min-h,
+//     responsive: true, 
+//     values: (
+//       25: 25%,
+//       50: 50%,
+//       75: 75%,
+//       100: 100%,
+//       30vh: 30vh,
+//       40vh: 40vh,
+//       50vh: 50vh,
+//       60vh: 60vh,
+//       70vh: 70vh,
+//       100vh: 100vh,
+//       auto: auto
+//     )
+//   ),
+// );
